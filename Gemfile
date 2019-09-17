@@ -22,6 +22,7 @@ gem "title"
 gem "uglifier"
 gem "bootsnap", require: false
 gem "travis"
+gem "slim-rails"
 
 
 group :development do
