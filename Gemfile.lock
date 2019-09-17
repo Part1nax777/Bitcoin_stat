@@ -86,6 +86,7 @@ GEM
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
     coderay (1.1.2)
+    commonjs (0.2.7)
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
     crack (0.4.3)
@@ -143,6 +144,13 @@ GEM
     json (2.2.0)
     launchy (2.4.3)
       addressable (~> 2.3)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (2.8.0)
+      actionpack (>= 4.0)
+      less (~> 2.6.0)
+      sprockets (> 2, < 4)
+      tilt
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -311,6 +319,11 @@ GEM
       launchy (~> 2.1)
       pusher-client (~> 0.4)
       typhoeus (~> 0.6, >= 0.6.8)
+    twitter-bootstrap-rails (4.0.0)
+      actionpack (~> 5.0, >= 5.0.1)
+      execjs (~> 2.7)
+      less-rails (~> 2.8, >= 2.8.0)
+      railties (~> 5.0, >= 5.0.1)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.5)
@@ -379,6 +392,7 @@ DEPENDENCIES
   timecop
   title
   travis
+  twitter-bootstrap-rails
   uglifier
   web-console
   webmock

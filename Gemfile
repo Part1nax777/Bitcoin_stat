@@ -23,6 +23,7 @@ gem "uglifier"
 gem "bootsnap", require: false
 gem "travis"
 gem "slim-rails"
+gem 'twitter-bootstrap-rails'
 
 
 group :development do
