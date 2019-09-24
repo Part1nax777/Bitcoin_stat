@@ -4,7 +4,7 @@
 - if params[:id]
   h3
     |  Graph of
-    = link_to("#{params[:id]}", "https://en.wikipedia.org/wiki/#{params[:id]}")
+    = link_to(" #{params[:id]}", "https://en.wikipedia.org/wiki/#{params[:id]}")
     | :
 - else
   h3
@@ -13,5 +13,7 @@
 .btn-toolbar[style="display: flex; margin-top: 15px;"]
   div[style="margin: auto;"]
     = link_to 'Bitcoin', currency_path('Bitcoin')
+    | |
     = link_to 'Ethereum', currency_path('Ethereum')
+    | |
     = link_to 'Nasdaq', currency_path('Nasdaq')
