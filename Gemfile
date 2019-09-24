@@ -24,6 +24,7 @@ gem "bootsnap", require: false
 gem "travis"
 gem "slim-rails"
 gem 'twitter-bootstrap-rails'
+gem 'rest-client'
 
 
 group :development do
