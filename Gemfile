@@ -25,6 +25,7 @@ gem "travis"
 gem "slim-rails"
 gem 'twitter-bootstrap-rails'
 gem 'rest-client'
+gem 'whenever', require: false
 
 
 group :development do
