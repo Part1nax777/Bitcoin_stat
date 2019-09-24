@@ -12,4 +12,15 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require highcharts
+//= require highcharts/highcharts-more
+//= require chartkick
+//= require highcharts/modules/annotations
+//= require highcharts/modules/data
+//= require highcharts/modules/drilldown
+//= require highcharts/modules/exporting
+//= require highcharts/modules/funnel
+//= require highcharts/modules/heatmap
+//= require highcharts/modules/no-data-to-display
+//= require highcharts/modules/offline-exporting
 //= require_tree .

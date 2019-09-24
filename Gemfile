@@ -26,6 +26,9 @@ gem "slim-rails"
 gem 'twitter-bootstrap-rails'
 gem 'rest-client'
 gem 'whenever', require: false
+gem 'highcharts-rails'
+gem 'chartkick'
+gem 'groupdate'
 
 
 group :development do
@@ -49,6 +52,7 @@ group :test do
   gem "simplecov", require: false
   gem "timecop"
   gem "webmock"
+  gem "rails-controller-testing"
 end
 
 gem "suspenders", group: [:development, :test]

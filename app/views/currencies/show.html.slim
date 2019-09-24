@@ -1,9 +1,17 @@
-h2 Values of CryptoCurrencies
-= button_to 'BTC'
-= link_to 'What is Bitcoin', "https://en.wikipedia.org/wiki/Bitcoin"
-p
-= button_to 'ETH'
-= link_to 'What is Etherium', "https://en.wikipedia.org/wiki/Ethereum"
-p
-= button_to 'Nasdaq'
-= link_to 'What is Nasdaq', "https://en.wikipedia.org/wiki/Nasdaq"
+.page-header
+  h1
+    | Values of CryptoCurrencies
+- if params[:id]
+  h3
+    |  Graph of
+    = link_to("#{params[:id]}", "https://en.wikipedia.org/wiki/#{params[:id]}")
+    | :
+- else
+  h3
+    |  Choose a currency please:
+= line_chart @currencies
+.btn-toolbar[style="display: flex; margin-top: 15px;"]
+  div[style="margin: auto;"]
+    = link_to 'Bitcoin', currency_path('Bitcoin')
+    = link_to 'Ethereum', currency_path('Ethereum')
+    = link_to 'Nasdaq', currency_path('Nasdaq')
